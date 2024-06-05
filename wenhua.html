@@ -1,0 +1,790 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>企业文化</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <head>  
+	<meta charset="utf-8">  
+	<title>Bootstrap 实例 - 自定义导航栏</title>  
+	<link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>  
+	<script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+	<style>  
+		/* 自定义当前页面链接的样式 */  
+		.navbar-nav .current {  
+			background-color: #e7e7e7; /* 或您想要的任何颜色 */  
+			color: #333; /* 或您想要的任何字体颜色 */  
+		} 
+		li {
+			background: rgba(255, 255, 255, 0.9); /* 白色背景，略微透明 */
+			margin: 15px 0;
+			padding: 20px;
+			border-radius: 10px;
+			text-align: left;
+			transition: transform 0.2s, background 0.3s;
+		} 
+	</style>  
+	
+</head>  
+<body>  
+  
+<nav class="navbar navbar-default" role="navigation">  
+	<div class="container-fluid">  
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
+			<ul class="nav navbar-nav">  
+				  
+				<li >  
+					<a href="/" >哥拉斯主页</a>  
+				</li>  
+				  
+				<li >  
+					<a href="/index1.html" >企业简介</a>  
+				</li>  
+				  
+				<li >  
+					<a href="/index2.html" >联系方式</a>  
+				</li>  
+				  
+				<li >  
+					<a href="/chanpin.html" >产品介绍</a>  
+				</li>  
+				  
+				<li >  
+					<a href="/changjia.html" >厂家</a>  
+				</li>  
+				  
+				<li class="active">  
+					<a href="/wenhua.html" class="current">企业文化</a>  
+				</li>  
+				  
+				<li >  
+					<a href="/yuangong.html" >员工</a>  
+				</li>  
+				  
+				<li >  
+					<a href="/zhaopin.html" >招聘信息</a>  
+				</li>  
+				  
+				<li >  
+					<a href="/gangwei.html" >岗位</a>  
+				</li>  
+				  
+			</ul>  
+		</div>  
+	</div>  
+</nav>  
+  
+</body>  
+
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业文化</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>  
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('https://img2.imgtp.com/2024/05/30/apiJqVkC.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+        .content-wrapper {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 900px;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px; /* 顶部导航栏与主要内容之间的间隔 */
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-height: 400px;
+            overflow-y: auto; /* 添加滚动条 */
+        }
+
+        li {
+            background: #f7f7f7;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            color: #333;
+            text-align: left;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        li:hover {
+            background: #e0e0e0;
+            transform: scale(1.02);
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        li p {
+            margin: 5px 0 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .toggle-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .toggle-button:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="content-wrapper">
+        <h1>企业文化</h1>
+        <button class="toggle-button" onclick="toggleContent()">隐藏内容</button>
+        <ul id="content-list">
+            
+                <li class="content-item">
+                    <h2><a href="/cultures/2024-05-16-%E4%BC%81%E4%B8%9A%E7%9A%84%E6%96%87%E5%8C%96%E5%92%8C%E4%BD%BF%E5%91%BD.html">企业的文化和使命</a></h2>
+                    <p><html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>企业的文化和使命</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 20px;
+            color: #333;
+        }
+        .container {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+        p {
+            text-indent: 2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #d9534f; /* 增加颜色以突出 */
+            font-weight: bold; /* 加粗 */
+        }
+        .mission {
+            padding: 15px;
+            background: #e9f2f9;
+            border-left: 5px solid #5bc0de;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .mission p {
+            margin: 0;
+        }
+        .funny-board, .mission-image img {
+            width: 40%; /* 将图片大小设置为40% */
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>哥拉斯公司的文化与使命</h1>
+        <p>哥拉斯公司的文化：这年头，生活到处都是——<span class="highlight">杯具</span></p>
+        <div class="funny-board">
+            <img src="https://img2.imgtp.com/2024/05/31/WbGY41MU.jpg" alt="生活中的杯具" />
+        </div>
+        <div class="mission">
+            <p>哥拉斯公司的使命：打造全星云最伟大的<span class="highlight">glass</span></p>
+        </div>
+        <div class="mission-image">
+            <img src="https://img2.imgtp.com/2024/05/31/t0buU0vd.jpg" alt="伟大的glass" />
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+</p>
+                </li>
+            
+                <li class="content-item">
+                    <h2><a href="/cultures/2024-05-16-%E5%85%AC%E5%8F%B8%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87-%E5%90%84%E7%B1%BB%E4%BF%9D%E9%99%A9%E4%BF%9D%E9%9A%9C.html">公司福利待遇 各类保险保障</a></h2>
+                    <p><html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luo yuanquan's Leave Information</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding-top: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 50px;
+        }
+        .leave-info {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            position: relative;
+        }
+        .leave-info:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(to right, #00b4db, #0083b0);
+            border-radius: 10px 10px 0 0;
+        }
+        .leave-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .leave-info li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .leave-info li:last-child {
+            border-bottom: none;
+        }
+        .leave-info li strong {
+            display: inline-block;
+            width: 150px;
+        }
+        .leave-info img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+         .hidden {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            .leave-info {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leave-info">
+            <h1>Luo yuanquan的保险信息</h1>
+            <h2>保险信息</h2>
+            <ul>
+                <li>
+                    <strong>全额缴纳:</strong> 
+                    法定社会保险、住房公积金
+                </li>
+                <li>
+                    <strong>免费年度体检:</strong> 
+                    关注员工身体
+                </li>
+                <li>
+                    <strong>健康额外保障:</strong> 
+                    补充商业保险
+                </li>
+            </ul>
+            <img src="https://img2.imgtp.com/2024/05/31/M87E79CI.jpg" alt="" />
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+</p>
+                </li>
+            
+                <li class="content-item">
+                    <h2><a href="/cultures/2024-05-16-%E5%85%AC%E5%8F%B8%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87-%E5%B8%A6%E8%96%AA%E4%BC%91%E5%81%87.html">公司福利待遇 带薪休假</a></h2>
+                    <p><html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luo yuanquan's Leave Information</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding-top: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;  /* 水平居中 */
+            align-items: center;       /* 垂直居中 */
+            min-height: 80vh;          /* 保证容器最小高度 */
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 50px;
+        }
+        .leave-info {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            position: relative;
+        }
+        .leave-info:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(to right, #00b4db, #0083b0);
+            border-radius: 10px 10px 0 0;
+        }
+        .leave-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .leave-info li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .leave-info li:last-child {
+            border-bottom: none;
+        }
+        .leave-info li strong {
+            display: inline-block;
+            width: 150px;
+        }
+        .leave-info img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+         .hidden {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            .leave-info {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leave-info">
+            <h1>Luo yuanquan的假期信息</h1>
+            <h2>假期信息</h2>
+            <ul>
+                <li>
+                    <strong>假期:</strong> 
+                    双休、法定节假日
+                </li>
+                <li>
+                    <strong>年假:</strong> 
+                    法定年假 5-15 天，公司年假上限 5 天
+                </li>
+                <li>
+                    <strong>其他假期:</strong> 
+                    婚假、丧假、产假、护理假等
+                </li>
+            </ul>
+            <img src="https://img2.imgtp.com/2024/05/31/PDLcn5q4.jpg" alt="" />
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+</p>
+                </li>
+            
+                <li class="content-item">
+                    <h2><a href="/cultures/2024-05-16-%E5%85%AC%E5%8F%B8%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87-%E9%A3%9F%E5%AE%BF%E5%A8%B1%E4%B9%90.html">公司福利待遇 食宿娱乐</a></h2>
+                    <p><html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luo yuanquan's Leave Information</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding-top: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 50px;
+        }
+        .leave-info {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            position: relative;
+        }
+        .leave-info:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(to right, #00b4db, #0083b0);
+            border-radius: 10px 10px 0 0;
+        }
+        .leave-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .leave-info li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .leave-info li:last-child {
+            border-bottom: none;
+        }
+        .leave-info li strong {
+            display: inline-block;
+            width: 150px;
+        }
+        .leave-info img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+         .hidden {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            .leave-info {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leave-info">
+            <h1>Luo yuanquan的食宿娱乐</h1>
+            <h2></h2>
+            <ul>
+                <li>
+                    <strong>生活保障:</strong> 
+                    免费工作餐、公司班车、公司宿舍
+                </li>
+                <li>
+                    <strong>节日福利:</strong> 
+                    过节费、生日礼品
+                </li>
+                <li>
+                    <strong>节日活动:</strong> 
+                    春节、端午、中秋……
+                </li>
+                <li>
+                    <strong>特色协会活动:</strong> 
+                    健身/游泳/羽毛球球/徒步/爬山/桌球……
+                </li>
+                <li>
+                    <strong>集团员工特惠:</strong> 
+                    全方位特惠、折扣/活动平台
+                </li>
+            </ul>
+            <img src="https://img2.imgtp.com/2024/05/31/G6KAOyKO.jpg" alt="" />
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+</p>
+                </li>
+            
+                <li class="content-item">
+                    <h2><a href="/cultures/2024-05-16-%E5%91%98%E5%B7%A5%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%85%E4%BA%8B-yangzuozuo.html">员工分享和故事 Yangzuozuo</a></h2>
+                    <p><html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>员工分享和故事 Yangzuozuo</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 20px;
+            color: #333;
+        }
+        .container {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            text-indent: 2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #007BFF; /* 蓝色文字 */
+            font-weight: bold; /* 加粗 */
+        }
+        .ceo-photo {
+            width: 40%; /* 将图片大小设置为百分之四十 */
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .funny-board img {
+            width: 40%; /* 将图片大小设置为百分之四十 */
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tip {
+            background: #f1f1f1;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            margin-bottom: 20px;
+        }
+        .tip p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>杨左左CEO的日常工作</h1>
+        <img src="https://img2.imgtp.com/2024/05/31/9nOIgrcC.jpg" alt="杨左左" class="ceo-photo" />
+        <p>杨左左CEO的日常工作是这样的：早上，她会一边吃着油条，一边用她那独特的“<span class="highlight">左氏</span>”口音给全体员工开晨会，内容从市场分析到员工激励，再到她昨晚看的搞笑视频，总之，内容丰富，笑点不断。</p>
+        <p>中午，她会在食堂与员工共进午餐，这时她会化身为“<span class="highlight">左氏段子手</span>”，用幽默的方式解答员工们的疑惑，让餐桌上的气氛轻松活泼。</p>
+        <h2>管理理念</h2>
+        <div class="tip">
+            <p>她的管理理念也别具一格。她常说：“<span class="highlight">工作要严肃，但生活要搞笑</span>。”所以，在她的带领下，公司不仅业绩蒸蒸日上，还时常举办各种搞笑活动，让员工们在紧张的工作之余也能找到乐趣。</p>
+        </div>
+        <p>有一次，公司遇到了一个棘手的项目，大家都愁眉不展。杨左左CEO却笑眯眯地走到白板前，用彩色笔勾勒出了一幅搞笑的漫画，一边画一边解说，逗得大家捧腹大笑。就在这样的轻松氛围中，大家竟然找到了解决问题的灵感，项目最终也顺利完成。</p>
+        <div class="funny-board">
+            <img src="https://img2.imgtp.com/2024/05/31/Z1Yd3ZCz.jpg" alt="搞笑" />
+        </div>
+        <p>这就是杨左左CEO，一个既严肃又搞笑的商业奇才。在她的带领下，公司不仅取得了商业上的成功，还成为了一个充满欢声笑语的大家庭。如果你有机会见到她，千万别忘了向她请教一下“<span class="highlight">左氏搞笑管理法</span>”哦！</p>
+    </div>
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+</p>
+                </li>
+            
+                <li class="content-item">
+                    <h2><a href="/cultures/2024-05-16-%E5%91%98%E5%B7%A5%E5%88%86%E4%BA%AB%E5%92%8C%E6%95%85%E4%BA%8B-zhoubazong.html">员工分享和故事 Zhoubazong</a></h2>
+                    <p><html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>员工分享和故事 Zhoubazong</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 20px;
+            color: #333;
+        }
+        .container {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            text-indent: 2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #007BFF; /* 蓝色文字 */
+            font-weight: bold; /* 加粗 */
+        }
+        .ceo-photo, .team-photo {
+            width: 40%; /* 将图片大小设置为百分之四十 */
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tip {
+            background: #f1f1f1;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            margin-bottom: 20px;
+        }
+        .tip p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>周霸总的团队会议习惯</h1>
+        <img src="https://img2.imgtp.com/2024/05/31/9MpG1IsO.jpg" alt="周霸总" class="ceo-photo" />
+        <p>周霸总还有一个特别的习惯，那就是在每周的团队例会上，她都会准备一个有趣的技术挑战题目，让大家在轻松愉快的氛围中锻炼思维能力和解决问题的能力。这种寓教于乐的方式不仅提高了团队的凝聚力，也激发了大家的工作热情。</p>
+        <img src="https://img2.imgtp.com/2024/05/31/RDRuqmVU.jpg" alt="团队会议" class="team-photo" />
+        <div class="tip">
+            <p>这种寓教于乐的方式不仅提高了团队的凝聚力，也激发了大家的工作热情。</p>
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+</p>
+                </li>
+            
+        </ul>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var contentList = document.getElementById('content-list');
+            var toggleButton = document.querySelector('.toggle-button');
+            if (contentList.classList.contains('hidden')) {
+                contentList.classList.remove('hidden');
+                toggleButton.textContent = '隐藏内容';
+            } else {
+                contentList.classList.add('hidden');
+                toggleButton.textContent = '显示内容';
+            }
+        }
+    </script>
+</body>
+</html>
+  </body>
+</html>
